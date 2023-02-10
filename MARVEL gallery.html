@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG WEBSITE</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #boxx{
+            border: 1px solid black;
+            overflow-x: hidden;
+            height: 100vh;
+            
+        }
+        .wrapper{
+            background-color:wheat;
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 100vh;
+            padding: 20px;
+            /* border: 1px solid black; */
+        }
+        .container{
+            /* background-color:white; */
+            /* border: 1px solid black; */
+            height:100%;
+            width:60%;
+            margin: 0 auto;
+            border-radius: 10px 10px 0px 0px;
+
+        }
+        .blogpage{
+            /* background-color: orange; */
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            gap:20px;
+            justify-content:space-between;
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+            padding:10px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            word-spacing: 10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px white;
+        }
+        .imagebox{
+             /* background-color: yellow; */
+             width:50%;
+             height: 40%;
+             /* border: 1px solid black; */
+             border-radius: 10px;
+             box-shadow: 2px 2px 10px black;
+             overflow: hidden;
+            }
+            .title{
+                padding: 8px;
+                background-color: white;
+                box-shadow: 2px 2px 10px black;
+                width:45%;
+                height: 40%;
+                /* border: 1px solid black; */
+                /* border-radius: 10px; */
+                
+            }
+            .imagebox img{
+                width: 100%;
+                height: 100%;
+                /* object-fit: cover; */
+                border-radius: 10px;
+                /* overflow: hidden; */
+        }
+        p{
+            font-size:1.3rem;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div id="boxx">
+    <div class="wrapper">
+        <div class="container">
+            <h1><u>MARVEL  CHARACTERS</u></h1>
+           
+            <div class="blogpage">
+               <div class="imagebox">
+                <img src="ironman.webp" alt="img">
+               </div>
+               <div class="title">
+                <h3>ROBERT DOWNEY JR (Iron Man)</h3><hr style="width: 290px;"> <br>
+                <p>"My armor, it was never a distraction or a hobby, it was a cocoon. And now, I'm a changed
+                man. You can take away my house, all my tricks and toys. But one thing you can't take away... I am Iron
+                Man." <br>
+                ―Tony Stark</p></div>
+               <div class="imagebox">
+                <img src="captainamerica.webp" alt="img">
+               </div>
+               <div class="title">
+                <h3>CHRIS EVANS (Captain America)</h3><hr style="width: 280px;"><br>
+                <p>"For as long as I can remember, I just wanted to do what was right. I guess I'm not quite
+                sure what that is anymore. And I thought I could throw myself back in and follow orders, serve. It's
+                just not the same." <br>
+                ―Steve Rogers</p></div>
+               <div class="imagebox">
+                <img src="thor.webp" alt="img">
+               </div>
+               <div class="title">
+                <h3>CHRIS HEMSWORTH (Thor)</h3><hr style="width: 250px;"><br>
+                <p>">"My friend, he told me that it was better to feel shitty from losing love than it is to
+                never experience love and feel nothing at all. Feel empty. And I think he was right. Which is how I've
+                been feeling for a long time. I push people away, kept them at a distance because of the fear of that
+                loss, but I don't wanna do that anymore." <br>
+                ―Thor</p></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

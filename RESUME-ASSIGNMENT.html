@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .wrapper {
+            overflow-x: hidden;
+            overflow-y: auto;
+            height: 100%;
+            padding-top: 20px;
+        }
+
+        .container {
+            box-shadow: 0px 0px 1px 1px wheat;
+            background-color: wheat;
+            height: 100%;
+            width: 1000px;
+            margin: 0 auto;
+            padding: 15px;
+            border-radius: 20px;
+        }
+
+        .navbar {
+            display: flex;
+            /* background-color: aqua; */
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+            /* padding: 10px; */
+            margin-bottom: 20px;
+
+        }
+
+        .navbar img {
+            width: 5rem;
+        }
+
+        .navbar ul {
+            display: flex;
+            gap: 100px;
+        }
+
+        .navbar ul li {
+            list-style: none;
+
+        }
+
+        .navbar ul li a {
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        button {
+            background-color: rgb(10, 90, 175);
+            color: white;
+            font-weight: bold;
+            padding: 7px;
+            border-radius: 5px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .card {
+            /* background-color: aqua; */
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: 100%;
+            justify-content: space-between;
+            /* padding: 10PX; */
+            border-radius: 20px;
+
+        }
+
+        #team {
+            width: 45%;
+            height: 350px;
+            /* background-color: brown; */
+            margin-bottom: 85px;
+        }
+
+        .img1 {
+            width: 45%;
+            height: 350px;
+            /* background-color: green; */
+            overflow: hidden;
+            border-radius: 10px;
+
+        }
+
+        img {
+            object-fit: cover;
+            width: 100%;
+
+
+        }
+
+        .img2 {
+
+            width: 45%;
+            height: 350px;
+            /* background-color: yellow; */
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        #about {
+            width: 45%;
+            height: 350px;
+            /* background-color: orange; */
+        }
+
+        hr {
+            width: 250px;
+            color: black;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 20PX;
+
+
+        }
+
+        .privacy {
+
+            width: 20%;
+            height: 100%;
+        }
+
+        #contact {
+            width: 20%;
+            height: 100%;
+        }
+
+        #courses {
+            width: 20%;
+            height: 100%;
+        }
+
+        .follow {
+            width: 20%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="navbar">
+                <img src="resume-icon.webp" alt="img">
+                <ul>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#about">About us</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button>start a project</button>
+            </div>
+            <div class="card">
+                <div id="team">
+                    <h2>FARHAN AHMAD</h2> <br>
+                    <hr> <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente possimus, unde iusto neque
+                        molestiae adipisci officia tempore nisi sit repellat beatae porro accusamus ratione nesciunt
+                        sunt, nulla quasi! Voluptatem veritatis blanditiis, perferendis reiciendis delectus ab totam
+                        architecto ratione maiores veniam omnis, placeat commodi, error saepe nesciunt odio fuga
+                        repellat dicta.
+                        <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, officia facilis? Iure
+                        debitis unde nihil temporibus atque perspiciatis soluta, sed autem esse quo sint tempore
+                        voluptatibus tempora magni, similique aperiam porro aut delectus itaque placeat officia
+                        recusandae, ut quaerat quidem? Ipsum cumque inventore consectetur nemo, et iure minima qui est.
+                    </p>
+                </div>
+                <div class="img1">
+                    <img src="img1.jpg" alt="img">
+                </div>
+                <div class="img2">
+                    <img src="img2.jpg" alt="img">
+                </div>
+                <div id="about">
+                    <h2>FOUNDER,CEO</h2> <br>
+                    <hr> <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente possimus, unde iusto neque
+                        molestiae adipisci officia tempore nisi sit repellat beatae porro accusamus ratione nesciunt
+                        sunt, nulla quasi! Voluptatem veritatis blanditiis, perferendis reiciendis delectus ab totam
+                        architecto ratione maiores veniam omnis, placeat commodi, error saepe nesciunt odio fuga
+                        repellat dicta.
+                        <br> <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, officia facilis? Iure
+                        debitis unde nihil temporibus atque perspiciatis soluta, sed autem esse quo sint tempore
+                        voluptatibus tempora magni, similique aperiam porro aut delectus itaque placeat officia
+                        recusandae, ut quaerat quidem? Ipsum cumque inventore consectetur nemo, et iure minima qui est.
+                    </p>
+                </div>
+
+            </div> <br>
+            <hr style="width: 100%; color: black;">
+            <div class="footer">
+                <div class="privacy">
+                    <h3>OUR PRIVACY POLICY</h3>
+                    <hr style="width: 70%;"> <br>
+                    <p>&copy; Lorem Ipsum 2023</p> <br>
+                    <p>All Right Reserved</p>
+                </div>
+                <div id="contact">
+                    <h3>ADDRESS</h3>
+                    <hr style="width: 45%;"> <br>
+                    <address>
+                        Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Repellendus nulla ullam <br>
+                        dolore modi quod maiores.
+                    </address> <br>
+                    <h3>EMAIL</h3>
+                    <hr style="width:33%;"> <br>
+                    <address>akhtarfarhan281@gmail.com</address>
+                </div>
+                <div id="Courses">
+                    <h3>MENU</h3>
+                    <hr style="width:74%;"> <br>
+                    <p>Team</p> <br>
+                    <h3>About Us</h3>
+                    <hr style="width:100%;"> <br>
+                    <p>Courses</p>
+                    <p>contact</p>
+                </div>
+                <div class="follow">
+                    <a href="https://www.thecodehelp.in">FACEBOOK</a> <br> <br>
+                    <a href="https://www.thecodehelp.in">TWITTER</a> <br> <br>
+                    <a href="https://www.thecodehelp.in">INSTAGRAM</a> <br> <br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

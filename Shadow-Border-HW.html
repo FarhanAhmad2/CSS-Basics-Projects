@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow-Border-HW</title>
+    <style>
+#ff{
+    height: 400px;
+    width: 400px;
+   /* box-shadow:0px 0px 1px black ; */
+  /* box-shadow: 5px 5px 10px 5px black,-5px -5px 10px 5px black; */
+  box-shadow: 0px 0px 3px 3px black;
+  background-image: radial-gradient(white,yellow,aqua);
+  /* background-image: url(babbarbhaiya.jpg); */
+  /* background-size:400px 400px; */
+ 
+}
+p{
+    font-weight: bold;
+    
+} 
+.container{
+                width: 500px;
+                height: 500px;
+                background-color: cadetblue;
+                border: 2px dotted red;
+                position: relative;
+                text-align: center;
+                margin:auto;
+                transform: translateY(500px);
+            }
+            
+            .st{
+                background-color: brown;
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                bottom:0px;
+            }
+           .nd{
+            background-color: blue;
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                right: 0px;
+            
+           }
+           .rd{
+            background-color: pink;
+                height: 50px;
+                width: 50px;
+                top:0px;
+                
+           }
+           .th{
+            background-color:green;
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                bottom: 0%;
+                right: 0%;
+           }
+           .fth{
+            background-color: yellow;
+                height: 50px;
+                width: 50px;
+                position: absolute;
+                bottom: 40%;
+                right: 45%;
+           }
+
+    </style>
+</head>
+<body>
+    
+    <div id="ff">
+        <p>hello wolrd</p>
+        <p style="position: absolute;top: 380px;">hello wolrd</p>
+        <!-- <p style="position: absolute; right:360px; top: 0px;">hello world</p> -->
+        <p style="position: absolute;left: 330px; top: 0px;">hello wolrd</p>
+        <p style="position: absolute; top: 380px; left: 330px;">hello world</p>
+        <p style="position: absolute; top: 190px; left: 165px;">hello world</p>
+        
+         <!-- <p style="position:absolute; top: 45%; left: 40%;">hello wolrd</p>
+         <p style="position:absolute; bottom:0px; right:0px;">hello world</p> -->
+            
+          <br><br>
+
+          
+        
+    <div class="container">
+        <div class="st">2ND</div>
+        <div class="nd">4TH</div>
+        <div class="rd">1ST</div>
+        <div class="th">3RD</div>
+        <div class="fth">5th</div>
+    </div>
+    
+
+</body>
+</html>

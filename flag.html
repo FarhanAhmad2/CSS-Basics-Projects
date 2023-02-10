@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDIAN FLAG</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+
+        .wrapper {
+
+            height: 100vh;
+            width: 100vw;
+            opacity: 1;
+            background-color: orange;
+            background-image: linear-gradient(orange, white, green);
+            animation: flag 2s linear infinite;
+        }
+
+        @keyframes flag {
+            50% {
+                opacity: 0;
+            }
+        }
+
+        @keyframes radical {
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .wrapper::after {
+            animation: radical 4s linear infinite;
+            position: absolute;
+            opacity: 0;
+            content: "";
+            background-image: radial-gradient(rgb(255, 169, 9), white, green);
+            width: 100%;
+            height: 100%;
+        }
+
+        .flag {
+            width: 300px;
+            overflow: hidden;
+            border: 1px solid black;
+            top: -650px;
+            left: 500px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 5px 5px 15px rgb(67, 64, 64);
+
+        }
+
+        .orange {
+
+            display: inline-block;
+            width: 300px;
+            height: 70px;
+            background-color: orange;
+        }
+
+        .white {
+
+            display: inline-block;
+            width: 300px;
+            height: 70px;
+            background-color: white;
+        }
+
+        .green {
+
+            display: inline-block;
+            width: 300px;
+            height: 70px;
+            background-color: green;
+        }
+
+        .chakra {
+            background-color: white;
+            border: 1px solid black;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: absolute;
+            top: 33.5%;
+            left: 40%;
+            animation: chakra 5s linear infinite;
+        }
+
+        @keyframes chakra {
+            0% {
+                rotate: 0deg;
+            }
+
+            50% {
+                rotate: 180deg;
+            }
+
+            100% {
+                rotate: 360deg;
+            }
+
+        }
+
+        .chakra span {
+            height: 100%;
+            width: 1px;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            display: inline-block;
+        }
+
+        span:nth-child(1) {
+            transform: rotate(15deg)
+        }
+
+        span:nth-child(2) {
+            transform: rotate(30deg)
+        }
+
+        span:nth-child(3) {
+            transform: rotate(45deg)
+        }
+
+        span:nth-child(4) {
+            transform: rotate(60deg)
+        }
+
+        span:nth-child(5) {
+            transform: rotate(75deg)
+        }
+
+        span:nth-child(6) {
+            transform: rotate(90deg)
+        }
+
+        span:nth-child(7) {
+            transform: rotate(105deg)
+        }
+
+        span:nth-child(8) {
+            transform: rotate(120deg)
+        }
+
+        span:nth-child(9) {
+            transform: rotate(135deg)
+        }
+
+        span:nth-child(10) {
+            transform: rotate(150deg)
+        }
+
+        span:nth-child(11) {
+            transform: rotate(165deg)
+        }
+
+        span:nth-child(12) {
+            transform: rotate(180deg)
+        }
+
+        .stick {
+            z-index: 6;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            display: inline-block;
+            top: 55px;
+            left: 500px;
+            position: absolute;
+            height: 600px;
+
+            border: 1px solid black;
+            width: 10px;
+            background-image: linear-gradient(orange, white, green);
+        }
+
+        .piller {
+            border-width: 1px;
+            /* border-right: 1px solid black; */
+            z-index: 8;
+            position: absolute;
+            top: 87%;
+            left: 26.6%;
+            width: 200px;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+
+        }
+
+        .or {
+
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border: 2px solid black;
+            width: 60px;
+            background-color: orange;
+            height: 30px;
+        }
+
+        .wh {
+
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border: 2px solid black;
+            width: 120px;
+            background-color: white;
+            height: 30px;
+        }
+
+        .gr {
+
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border: 2px solid black;
+            width: 180px;
+            background-color: green;
+            height: 30px;
+        }
+
+        h1 {
+            display: inline-block;
+            top: 20%;
+            left: 60%;
+            color: rgb(196, 180, 180);
+            position: absolute;
+            padding: 10px;
+            font-family: cursive;
+            text-shadow: 2px 2px 2px blue;
+            background-image: radial-gradient(orange, white, green);
+            box-shadow: 5px 5px 15px rgb(67, 64, 64);
+            animation: text 5s linear infinite;
+        }
+
+        @keyframes text {
+            0% {
+                color: orange;
+            }
+
+            40% {
+                color: white;
+            }
+
+            80% {
+                color: green;
+            }
+
+            100% {
+                color: orange;
+            }
+        }
+
+        .heart {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            /* border: 2px solid black; */
+            transform: rotate(45deg);
+
+
+        }
+
+        .heart::after {
+
+            /* border: 2px solid black; */
+
+            content: "";
+            color: white;
+            background-color: red;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            top: 0px;
+            left: -100px;
+            border-radius: 50%;
+
+        }
+
+        .heart::before {
+            border-radius: 50%;
+
+            /* border: 2px solid black; */
+            right: -0px;
+            top: -100px;
+            content: "";
+            color: white;
+            background-color: red;
+            position: absolute;
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+
+    </div>
+    <div class="stick">
+
+    </div>
+    <div class="flag">
+        <div class="chakra">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+        <div class="orange"></div>
+        <div class="white"></div>
+        <div class="green"></div>
+    </div>
+    <div class="piller">
+        <div class="or"></div>
+        <div class="wh"></div>
+        <div class="gr"></div>
+    </div>
+    <h1>HAPPY REPUBLIC DAY</h1>
+
+
+
+
+
+</body>
+
+</html>
